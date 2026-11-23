@@ -41,3 +41,25 @@ The implementation uses binary file modes and handles
 missing or malformed files by returning None.
 
 Important: Only unpickle files from trusted sources.
+
+## Task 2: Converting CSV Data to JSON
+
+File: task_02_csv.py
+
+The convert_csv_to_json(csv_filename) function reads a CSV file
+using csv.DictReader and writes the records to data.json.
+
+The function:
+- Converts CSV rows into a list of dictionaries.
+- Uses json.dump() to serialize the data.
+- Returns True when conversion succeeds.
+- Returns False when the input cannot be processed.
+- Preserves CSV field values as strings.
+
+Example:
+
+    convert_csv_to_json("data.csv")
+
+Output file:
+
+    data.json
