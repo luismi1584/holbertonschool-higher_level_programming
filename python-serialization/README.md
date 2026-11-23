@@ -63,3 +63,23 @@ Example:
 Output file:
 
     data.json
+
+## Task 3: Serializing and Deserializing with XML
+
+File: task_03_xml.py
+
+This task demonstrates XML serialization and deserialization
+using Python's xml.etree.ElementTree module.
+
+Functions:
+- serialize_to_xml(dictionary, filename):
+  Converts a dictionary into an XML document and saves it.
+
+- deserialize_from_xml(filename):
+  Reads an XML document and reconstructs a Python dictionary.
+
+The XML document uses a data root element and child elements
+for each dictionary key.
+
+Values are serialized as text, so deserialized values are
+strings rather than their original Python numeric or boolean types.
