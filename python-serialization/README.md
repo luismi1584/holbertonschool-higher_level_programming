@@ -17,3 +17,27 @@ The module provides two functions:
 
 The implementation uses Python's built-in json module,
 UTF-8 encoding, and the with statement for file handling.
+
+## Task 1: Pickling Custom Classes
+
+File: task_01_pickle.py
+
+This task demonstrates serialization and deserialization of
+custom Python objects using the pickle module.
+
+### CustomObject
+
+Attributes:
+- name: string
+- age: integer
+- is_student: boolean
+
+Methods:
+- display(): prints the object's attributes.
+- serialize(filename): saves the current object to a binary file.
+- deserialize(filename): reconstructs a CustomObject instance.
+
+The implementation uses binary file modes and handles
+missing or malformed files by returning None.
+
+Important: Only unpickle files from trusted sources.
