@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 """Serialize and deserialize Python dictionaries using XML."""
 
